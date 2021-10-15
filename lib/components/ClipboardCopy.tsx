@@ -29,7 +29,7 @@ const ClipboardCopy = ({ copyText }) => {
   };
 
   return (
-    <div>
+    <div className="form">
       <input type="text" value={copyText} readOnly />
       {/* Bind our handler function to the onClick button property */}
       <button onClick={handleCopyClick}>
