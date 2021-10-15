@@ -3,7 +3,7 @@ import appConfig from "../appConfig";
 
 const strategy = new OAuth2Strategy(
   appConfig.arena,
-  (accessToken, refreshToken, profile, done) => {
+  (accessToken, _refreshToken, _profile, done) => {
     return done(null, { accessToken });
   }
 );

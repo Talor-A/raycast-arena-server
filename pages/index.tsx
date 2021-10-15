@@ -1,7 +1,7 @@
 import React from 'react'
 import { useIdentity } from '../lib/withIdentity'
 
-export default () => {
+const Index = () => {
   const identity = useIdentity()
   if (!identity) {
     return null
@@ -12,4 +12,6 @@ export default () => {
       <h1>{JSON.stringify(identity)}</h1>
     </main>
   )
-}
+};
+
+export default Index;
