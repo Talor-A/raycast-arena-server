@@ -6,7 +6,7 @@
   "scripts": {
     "dev": "next",
     "build": "next build",
-    "start": "next start"
+    "start": "next start -p $PORT"
   },
   "dependencies": {
     "cookie-session": "^1.3.3",
@@ -16,12 +16,12 @@
     "micro-compose": "^0.0.3",
     "micro-cookie": "^1.2.0",
     "micro-redirect": "^1.0.0",
-    "next": "^9.0.6",
+    "next": "^11.1.2",
     "next-cookies": "^1.1.3",
     "passport": "^0.4.0",
     "passport-github": "^1.1.0",
-    "react": "^16.9.0",
-    "react-dom": "^16.9.0",
+    "react": "^17.0.2",
+    "react-dom": "^17.0.2",
     "tiny-invariant": "^1.1.0"
   },
   "devDependencies": {
