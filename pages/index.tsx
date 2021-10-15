@@ -1,17 +1,18 @@
-import React from 'react'
-import { useIdentity } from '../lib/withIdentity'
+import React from "react";
+import ClipboardCopy from "../lib/components/ClipboardCopy";
+import { useIdentity } from "../lib/withIdentity";
 
 const Index = () => {
-  const identity = useIdentity()
+  const identity = useIdentity();
   if (!identity) {
-    return null
+    return null;
   }
 
   return (
     <main>
-      <h1>{JSON.stringify(identity)}</h1>
+      <ClipboardCopy copyText={identity.accessToken} />
     </main>
-  )
+  );
 };
 
 export default Index;
