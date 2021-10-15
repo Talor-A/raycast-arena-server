@@ -33,7 +33,7 @@ passport.deserializeUser(async (serializedUser, done) => {
 });
 
 // export middleware to wrap api/auth handlers
-export default (fn) => (req, res) => {
+const Middleware = (fn) => (req, res) => {
   if (!res.redirect) {
     // passport.js needs res.redirect:
     // https://github.com/jaredhanson/passport/blob/1c8ede/lib/middleware/authenticate.js#L261
@@ -60,3 +60,5 @@ export default (fn) => (req, res) => {
     )
   );
 };
+
+export default Middleware;
